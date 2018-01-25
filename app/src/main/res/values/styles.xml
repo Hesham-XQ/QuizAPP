@@ -11,15 +11,15 @@
     <style name="Radio" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="android:layout_marginBottom">20dp</item>
-        <item name="android:paddingLeft">10dp</item>
-        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">@dimen/padding_margin_10</item>
+        <item name="android:paddingRight">@dimen/padding_margin_10</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">#455C7B</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:paddingBottom">20dp</item>
-        <item name="android:paddingTop">20dp</item>
+        <item name="android:layout_marginTop">@dimen/padding_margin_20</item>
+        <item name="android:paddingBottom">@dimen/padding_margin_20</item>
+        <item name="android:paddingTop">@dimen/padding_margin_20</item>
 
     </style>
 
@@ -29,8 +29,8 @@
 
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">24sp</item>
-        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">@dimen/normal_textview_title_24</item>
+        <item name="android:paddingBottom">@dimen/padding_margin_15</item>
         <item name="android:textColor">#fdd9be</item>
 
 

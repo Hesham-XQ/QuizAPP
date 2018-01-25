@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFBC67">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFBC67"
     android:orientation="vertical"
-    tools:context="com.example.android.quizapp.MainActivity">
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#AC6C82"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
+        android:paddingBottom="@dimen/padding_margin_10"
+        android:paddingTop="@dimen/padding_margin_10"
         android:text="@string/title"
         android:textAlignment="center"
         android:textColor="#e5e7e9"
-        android:textSize="30sp" />
+        android:textSize="@dimen/medium_textview_title_30" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/padding_margin_10"
         android:text="@string/about_title"
         android:textColor="#455C7B"
-        android:textSize="24sp" />
+        android:textSize="@dimen/normal_textview_title_24" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:lineSpacingExtra="2dp"
+        android:layout_marginLeft="@dimen/padding_margin_10"
+        android:lineSpacingExtra="@dimen/textview_spacing_2"
         android:text="@string/about"
         android:textColor="#455C7B"
-        android:textSize="18sp" />
+        android:textSize="@dimen/small_textview_title_18" />
 
 
     <Button
         android:id="@+id/start_quiz"
-        android:layout_width="200dp"
+        android:layout_width="@dimen/button_width_200"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="#455C7B"
@@ -49,3 +51,5 @@
         android:textColor="#fdd9be" />
 
 </LinearLayout>
+
+</ScrollView>

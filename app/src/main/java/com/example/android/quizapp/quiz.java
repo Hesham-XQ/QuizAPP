@@ -32,6 +32,11 @@ public class quiz extends AppCompatActivity {
 
     public void getResults(View view) {
 
+        //play sound when button clicked
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.switchon);
+
+        mp.start();
+
         EditText txt = findViewById(R.id.name);
         String nameValue = txt.getText().toString();
 
@@ -51,11 +56,6 @@ public class quiz extends AppCompatActivity {
             scrollToTop.fullScroll(ScrollView.FOCUS_UP);
 
         } else {
-            //play sound when button clicked
-            final MediaPlayer mp = MediaPlayer.create(this, R.raw.switchon);
-
-            mp.start();
-
 
 
         /*

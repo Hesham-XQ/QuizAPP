@@ -14,12 +14,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="15dp"
+            android:layout_margin="@dimen/padding_margin_15"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:text="Quiz App"
             android:textColor="#AC6C82"
-            android:textSize="40sp"
+            android:textSize="@dimen/big_textview_title_40"
             android:textStyle="bold" />
 
 
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="@dimen/padding_margin_30"
             android:adjustViewBounds="true"
             android:contentDescription="@string/world_map"
             android:scaleType="fitXY"
@@ -38,32 +38,33 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/padding_margin_20"
                 android:background="#AC6C82"
                 android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
+                android:paddingLeft="@dimen/padding_margin_10"
+                android:paddingRight="@dimen/padding_margin_10">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp"
+                    android:paddingBottom="@dimen/padding_margin_10"
+                    android:paddingTop="@dimen/padding_margin_10"
                     android:text="@string/name"
                     android:textColor="#e5e7e9"
-                    android:textSize="24sp" />
+                    android:textSize="@dimen/normal_textview_title_24" />
 
                 <EditText
                     android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="@dimen/padding_margin_20"
                     android:hint="@string/enter_name"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp"
+                    android:paddingBottom="@dimen/padding_margin_10"
+                    android:paddingTop="@dimen/padding_margin_10"
                     android:textColor="#e5e7e9"
                     android:textColorHint="#e5e7e9" />
             </LinearLayout>
@@ -80,16 +81,16 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/thailand"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/hungary"
                     android:textColor="#fdd9be" />
 
@@ -97,8 +98,8 @@
                     android:id="@+id/answer_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/lativa"
                     android:textColor="#fdd9be" />
 
@@ -124,24 +125,24 @@
                     android:id="@+id/answer_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/estonia"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/malysia"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/senegal"
                     android:textColor="#fdd9be" />
 
@@ -166,24 +167,24 @@
                     android:id="@+id/answer_3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/uae"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/sudan"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/ghana"
                     android:textColor="#fdd9be" />
 
@@ -207,24 +208,24 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/senegal"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/cameron"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/thailand"
                     android:textColor="#fdd9be" />
 
@@ -249,16 +250,16 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/yemen"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/egypt"
                     android:textColor="#fdd9be" />
 
@@ -266,8 +267,8 @@
                     android:id="@+id/answer_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/jordan"
                     android:textColor="#fdd9be" />
 
@@ -292,24 +293,24 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/ireland"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/chile"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/yemen"
                     android:textColor="#fdd9be" />
 
@@ -335,24 +336,24 @@
                     android:id="@+id/answer_7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/ireland"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/peru"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/switzerland"
                     android:textColor="#fdd9be" />
 
@@ -375,24 +376,24 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/thailand"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/costarica"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/slovenia"
                     android:textColor="#fdd9be" />
 
@@ -417,8 +418,8 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/peru"
                     android:textColor="#fdd9be" />
 
@@ -426,16 +427,16 @@
                     android:id="@+id/answer_9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/portugal"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/china"
                     android:textColor="#fdd9be" />
 
@@ -459,8 +460,8 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/cambodia"
                     android:textColor="#fdd9be" />
 
@@ -468,16 +469,16 @@
                     android:id="@+id/answer_10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/chile"
                     android:textColor="#fdd9be" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="@dimen/radio_button_8"
+                    android:paddingTop="@dimen/radio_button_8"
                     android:text="@string/switzerland"
                     android:textColor="#fdd9be" />
 
@@ -493,48 +494,56 @@
                 android:id="@+id/result_display"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="2dp"
-                android:paddingLeft="10dp"
-                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="@dimen/textview_spacing_2"
+                android:paddingLeft="@dimen/padding_margin_10"
+                android:layout_marginBottom="@dimen/radio_button_8"
                 android:text=""
-                android:textSize="18sp"
+                android:textSize="@dimen/small_textview_title_18"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/padding_margin_10"
                 android:orientation="horizontal">
 
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#AC6C82"
+                    android:background="@drawable/button"
                     android:onClick="getResults"
                     android:text="@string/get_result"
-                    android:textColor="#e5e7e9" />
+                    android:textColor="#e5e7e9"
+                    android:focusable="true"
+                    android:clickable="true"
+                    />
 
                 <Button
+                    android:background="@drawable/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:background="#AC6C82"
+                    android:layout_marginLeft="@dimen/padding_margin_20"
+                    android:layout_marginRight="@dimen/padding_margin_20"
                     android:onClick="resetQuiz"
                     android:text="@string/retry_quiz"
-                    android:textColor="#e5e7e9" />
+                    android:textColor="#e5e7e9"
+                    android:clickable="true"
+                    android:linksClickable="true"
+                    />
 
                 <Button
+                    android:background="@drawable/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#AC6C82"
                     android:onClick="correctAnswers"
-                    android:paddingLeft="3dp"
-                    android:paddingRight="3dp"
+                    android:paddingLeft="@dimen/button_padding_3"
+                    android:paddingRight="@dimen/button_padding_3"
                     android:text="@string/show_answer"
-                    android:textColor="#e5e7e9" />
+                    android:textColor="#e5e7e9"
+                    android:clickable="true"
+                    android:linksClickable="true"/>
 
 
             </LinearLayout>
