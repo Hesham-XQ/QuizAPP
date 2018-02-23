@@ -22,20 +22,16 @@
         android:textSize="@dimen/medium_textview_title_30" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_margin="@dimen/padding_margin_10"
         android:text="@string/about_title"
-        android:textColor="#455C7B"
-        android:textSize="@dimen/normal_textview_title_24" />
+        android:textSize="@dimen/normal_textview_title_24"
+        style="@style/text" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/text"
         android:layout_marginLeft="@dimen/padding_margin_10"
         android:lineSpacingExtra="@dimen/textview_spacing_2"
         android:text="@string/about"
-        android:textColor="#455C7B"
         android:textSize="@dimen/small_textview_title_18" />
 
 

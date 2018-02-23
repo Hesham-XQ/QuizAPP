@@ -12,7 +12,7 @@
 
         <!-- Parent activity -->
         <activity android:name=".MainActivity"
-            android:label="UDACITY QuIZ APP"
+            android:label="QuIZ APP"
             android:configChanges="orientation|screenSize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

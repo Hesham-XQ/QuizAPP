@@ -17,7 +17,6 @@ Button start;
         setContentView(R.layout.activity_main);
 
         start = (Button) findViewById(R.id.start_quiz);
-     //   Button one = (Button) this.findViewById(R.id.button1);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.click);
 
         start.setOnClickListener(new View.OnClickListener() {

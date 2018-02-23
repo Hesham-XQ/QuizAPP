@@ -55,7 +55,7 @@
     <string name="thank_you">thank you for using quiz app</string>
     <string name="retry_quiz">retry quiz</string>
     <string name="get_result">get result</string>
-    <string name="show_answer"> show right answers</string>
+    <string name="show_answer">right Ans.</string>
     <string name="enter_name">PLZ enter your name here</string>
     <string name="world_map">world map</string>
     <string name="about">Simple app build to test your knowledge about countries and capitals the rules is very simple : \n
@@ -71,4 +71,5 @@
     <string name="start_quiz">start quiz</string>
     <string name="name">NAME :</string>
     <string name="error"> Plz enter your name first </string>
+    <string name="main_title">Quiz App</string>
 </resources>

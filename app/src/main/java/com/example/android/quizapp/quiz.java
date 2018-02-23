@@ -25,7 +25,6 @@ public class quiz extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // getActionBar().setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
     }
@@ -96,6 +95,10 @@ public class quiz extends AppCompatActivity {
 
         /*displaying score*/
             displayScore(resultMessage);
+
+        // display score as toast message
+            Toast scoreMessage = Toast.makeText(this, "your score = " + String.valueOf(score) + " out of 10", Toast.LENGTH_LONG);
+            scoreMessage.show();
         }
     }
 
@@ -120,25 +123,12 @@ public class quiz extends AppCompatActivity {
         }
         return methodScore;
     }
-/*
-    private void displayMessage(String message) {
-        TextView orderSummaryTextView = findViewById(R.id.order_summary_text_view);
-        orderSummaryTextView.setText(message);
-    }*/
 
     private void displayScore(String message) {
         TextView resultText = (TextView) findViewById(R.id.result_display);
         resultText.setText(message);
     }
-    /*
-    method displaying score on the screen
-    *
-    private void displayScore (int finalScore) {
 
-        Toast scoreMessage = Toast.makeText(this,"your score = " , Toast.LENGTH_LONG);
-        scoreMessage.show();
-    }
-*/
 
     public void resetQuiz(View view) {
         /*
@@ -221,7 +211,8 @@ public class quiz extends AppCompatActivity {
         choiceGroup.check(R.id.answer_9);
         choiceGroup = (RadioGroup) findViewById(R.id.radioGroup10);
         choiceGroup.check(R.id.answer_10);
-         /*informative toast*/
+
+         //informative toast
         Toast infoMessage = Toast.makeText(this, getString(R.string.rightanswers), Toast.LENGTH_LONG);
         infoMessage.show();
     }
