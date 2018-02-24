@@ -72,4 +72,10 @@
     <string name="name">NAME :</string>
     <string name="error"> Plz enter your name first </string>
     <string name="main_title">Quiz App</string>
+    <string name="Tokyo">Tokyo is the capital of :</string>
+    <string name="answer">Type your answer here</string>
+    <string name="spain">Which of these cities located in spain :</string>
+    <string name="madrid">Madrid</string>
+    <string name="granada">Granada</string>
+    <string name="stutgart">Stutgart</string>
 </resources>

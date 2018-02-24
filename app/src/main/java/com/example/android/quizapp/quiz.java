@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -23,14 +24,30 @@ import com.example.android.quizapp.R;
 
 public class quiz extends AppCompatActivity {
 
+EditText edit ;
+String j = "Japan" ;
+    String j1 = "JAPAN" ;
+    String j2 = "japan" ;
+    CheckBox right1 , right2 , wrong1 , wrong2 ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
+        edit = (EditText) findViewById(R.id.edit);
+
+        right1 = (CheckBox) findViewById(R.id.right1);
+        right2 = (CheckBox) findViewById(R.id.right2);
+        wrong1 = (CheckBox) findViewById(R.id.wrong1);
+        wrong2 = (CheckBox) findViewById(R.id.wrong2);
+
     }
+
 
     public void getResults(View view) {
 
+        boolean rightcheck = right1.isChecked();
+        String editAnswer = edit.getText().toString();
         //play sound when button clicked
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.switchon);
 
@@ -78,15 +95,13 @@ public class quiz extends AppCompatActivity {
             answerArray[6] = answer.isChecked();
             answer = (RadioButton) findViewById(R.id.answer_8);
             answerArray[7] = answer.isChecked();
-            answer = (RadioButton) findViewById(R.id.answer_9);
-            answerArray[8] = answer.isChecked();
-            answer = (RadioButton) findViewById(R.id.answer_10);
-            answerArray[9] = answer.isChecked();
+
+
 
 
 
            /*score calculation*/
-            int score = calculateScore(answerArray);
+            int score = calculateScore(answerArray , editAnswer);
 
             String resultMessage = "-";
 
@@ -114,15 +129,36 @@ public class quiz extends AppCompatActivity {
     /*
    method calculating the overall score
     */
-    private int calculateScore(boolean scoreArray[]) {
+    private int calculateScore(boolean scoreArray[] , String editAnswer) {
         int methodScore = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 9; i++) {
             if (scoreArray[i]) {
                 methodScore = methodScore + 1;
             }
         }
+
+        if (editAnswer.equals(j) || editAnswer.equals(j1) || editAnswer.equals(j2) ){
+            methodScore = methodScore + 1;
+        }
+
+
+
+        if (wrong1.isChecked() || wrong2.isChecked()){
+
+            return methodScore;
+
+        }
+
+        else if (right1.isChecked() && right2.isChecked())
+        {
+            methodScore = methodScore + 1;
+        }
+
+
         return methodScore;
     }
+
+
 
     private void displayScore(String message) {
         TextView resultText = (TextView) findViewById(R.id.result_display);
@@ -153,12 +189,16 @@ public class quiz extends AppCompatActivity {
         choiceGroup.clearCheck();
         choiceGroup = (RadioGroup) findViewById(R.id.radioGroup7);
         choiceGroup.clearCheck();
-        choiceGroup = (RadioGroup) findViewById(R.id.radioGroup8);
-        choiceGroup.clearCheck();
-        choiceGroup = (RadioGroup) findViewById(R.id.radioGroup9);
-        choiceGroup.clearCheck();
-        choiceGroup = (RadioGroup) findViewById(R.id.radioGroup10);
-        choiceGroup.clearCheck();
+
+
+        // to clear the edit text field
+        edit.setText("");
+
+        //to check the right answers
+        right1.setChecked(false);
+        right2.setChecked(false);
+        wrong1.setChecked(false);
+        wrong2.setChecked(false);
         /*informative toast*/
         Toast resetMessage = Toast.makeText(this, getString(R.string.reset), Toast.LENGTH_LONG);
         resetMessage.show();
@@ -205,12 +245,16 @@ public class quiz extends AppCompatActivity {
         choiceGroup.check(R.id.answer_6);
         choiceGroup = (RadioGroup) findViewById(R.id.radioGroup7);
         choiceGroup.check(R.id.answer_7);
-        choiceGroup = (RadioGroup) findViewById(R.id.radioGroup8);
-        choiceGroup.check(R.id.answer_8);
-        choiceGroup = (RadioGroup) findViewById(R.id.radioGroup9);
-        choiceGroup.check(R.id.answer_9);
-        choiceGroup = (RadioGroup) findViewById(R.id.radioGroup10);
-        choiceGroup.check(R.id.answer_10);
+
+
+        //to write the answer in the edit text field
+        edit.setText(j1);
+
+        //to check the right answers
+        right1.setChecked(true);
+        right2.setChecked(true);
+        wrong1.setChecked(false);
+        wrong2.setChecked(false);
 
          //informative toast
         Toast infoMessage = Toast.makeText(this, getString(R.string.rightanswers), Toast.LENGTH_LONG);

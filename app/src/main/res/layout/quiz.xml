@@ -298,64 +298,59 @@
 
             </RadioGroup>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/Radio">
+            <TextView
+                style="@style/question_text"
+                android:text="@string/spain" />
+            <CheckBox
+                android:id="@+id/wrong1"
+                android:text="@string/lisbon"
+                style="@style/checkbox" />
 
-            <RadioGroup
-                android:id="@+id/radioGroup9"
+            <CheckBox
+                android:id="@+id/right1"
+                android:text="@string/madrid"
+                style="@style/checkbox"/>
+
+            <CheckBox
+                android:id="@+id/right2"
+                android:text="@string/granada"
+                style="@style/checkbox"/>
+
+            <CheckBox
+                android:id="@+id/wrong2"
+                android:text="@string/stutgart"
+                style="@style/checkbox"/>
+
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 style="@style/Radio">
+            <TextView
+                style="@style/question_text"
+                android:text="@string/Tokyo" />
 
-                <TextView
-                    style="@style/question_text"
-                    android:text="@string/lisbon" />
+<EditText
+android:id="@+id/edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/answer"
+    android:textColor="#e5e7e9"
+    android:textColorHint="#e5e7e9"
+    />
 
-                <RadioButton
-                    style="@style/radio_button"
-                    android:text="@string/peru" />
-
-                <RadioButton
-                    android:id="@+id/answer_9"
-                    style="@style/radio_button"
-                    android:text="@string/portugal" />
-
-                <RadioButton
-                    style="@style/radio_button"
-                    android:text="@string/china" />
-
-                <RadioButton style="@style/radio_button_no_padding"
-                    android:text="@string/Taiwan"/>
-
-            </RadioGroup>
-
-
-            <RadioGroup
-                android:id="@+id/radioGroup10"
-                style="@style/Radio">
-
-                <TextView
-                    style="@style/question_text"
-                    android:text="@string/santiago" />
-
-                <RadioButton
-                    style="@style/radio_button"
-                    android:text="@string/cambodia" />
-
-                <RadioButton
-                    android:id="@+id/answer_10"
-                    style="@style/radio_button"
-                    android:text="@string/chile"/>
-
-                <RadioButton
-                    style="@style/radio_button"
-                    android:text="@string/switzerland" />
-
-                <RadioButton
-                    style="@style/radio_button_no_padding"
-                    android:text="@string/norway" />
-
-            </RadioGroup>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/result_display"
-                android:text=""
                 style="@style/result_display_text_view" />
 
             <LinearLayout
